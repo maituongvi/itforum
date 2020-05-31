@@ -220,9 +220,14 @@ h1{
     }
 
     div.post > div{
-        width: 100% !important;
+        max-width: 100% !important;
     }
     div.post img{
         width: 100%;
+    }
+
+    div.subject span{
+        width: 100% !important;
+        text-align: center;
     }
 }
