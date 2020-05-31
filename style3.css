@@ -1,0 +1,228 @@
+@charset "utf-8";
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  
+}
+header{
+    background: linear-gradient(#00b3b3,#e6ffff,#006666);
+    padding: 5px;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #c1f0f0;
+    
+}
+
+div.head{
+    display: flex;
+   
+}
+
+div.head nav{
+    margin-left: auto;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 3px 3px #CCCCCC;
+}
+
+/*CSS ads*/
+section.ads{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 5px;
+
+}
+
+section.ads >div{
+    width: 25%;
+    padding-bottom: 40px;
+    background-color:  #003333;
+    border: 1px dashed mintcream;
+    text-align: center;
+    padding-top: 5px;
+    margin-right: 5px;
+}
+
+section.ads >div>a{
+    font-size: 40px;
+}
+/*CSS content*/
+
+section.content{
+    width: 80%;
+    margin: 5px auto;
+    background-color: #008080;
+    display: flex;
+}
+
+section.content ul{
+    list-style-image: url(images/bullet2.png);
+    list-style-position: inside;
+    margin: 0px;
+    padding: 0px;
+}
+
+section.content ul>li{
+    margin-top: 2px;
+    background-color: #003333;
+    padding: 10px;
+}
+.content h2{
+    text-align: center;
+    margin: 0px;
+    padding: 15px;
+    background-color: turquoise;
+    color: white;
+    
+}
+
+section.category{
+    width: 30%;
+    padding: 15px 0;
+}
+section.news{
+    width: 70%;
+    padding: 15px;
+}
+
+section.content ul>li>a{
+    color: #e6ffff;
+}
+
+h2.hello{
+    background-color:#008080 ;
+   
+}
+
+div.subject{
+    border-bottom: 2px solid #e6ffff;
+}
+
+div.subject span {
+    background-color:  #c1f0f0;
+    display: block;
+    width: 30%;
+    padding: 15px;
+    border-radius: 20px 20px 0 0;
+}
+
+/*css posts*/
+div.post{
+    display: flex;
+    padding: 10px;
+}
+
+div.post > div.img{
+    max-width: 30%;
+    overflow: hidden; /*chống tràn*/
+    
+}
+
+
+
+div.post > div.para{
+    max-width: 70%;
+    padding: 5px;
+    
+}
+
+ div.img img{
+    max-width: 100%;
+}
+
+div.post > div.img img:hover{
+    transform: scale(1.5); /*hiệu ứng khi di chuột lên ảnh*/
+}
+
+div.post h4{
+    margin: 0;
+    padding: 0;
+}
+
+div.para a{
+    padding: 0px;
+}
+
+.tag{
+    background-color: darkslategray;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 20px;
+    color: white;
+}
+
+
+/* CSS Footer*/
+
+footer{
+    display: flex;
+    padding: 10px;
+    background: #006666;
+    color: white;
+}
+
+footer h3 {
+    text-decoration: underline;
+}
+
+footer >div{
+    width: 33.33%;
+    padding: 15px;
+}
+
+footer img{
+    width: 100%;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+
+h1{
+
+}
+
+@media screen and (max-width: 500px){
+    div.head, section.ads,section.category{
+        display: none;
+    }
+
+    section.content{
+        width: 100%;
+    }
+
+    section.news{
+        width: 100%;
+    }
+
+    div.post{
+        flex-direction: column; /*hiển thị theo chiều dọc trên màn hình điện thoại*/
+    }
+
+    div.post > div{
+        width: 100% !important;
+    }
+    div.post img{
+        width: 100%;
+    }
+}
